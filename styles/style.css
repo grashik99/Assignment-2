@@ -82,7 +82,8 @@ nav {
     width: 30px;
     display: none;
 }
-.nav-end-small hr{
+
+.nav-end-small hr {
     height: 1px;
     color: purple;
     margin-bottom: 8px;
@@ -90,50 +91,107 @@ nav {
 
 /* nav style end */
 /* hero section start */
-.hero{
+.hero {
     width: 85%;
     margin: 0 auto;
     justify-content: space-between;
     align-items: center;
 }
-.hero-text{
+
+.hero-text {
     padding: 0 20px;
 }
-.hero-text h1{
+
+.hero-text h1 {
     font-size: 56px;
     font-weight: 800;
 }
-.hero-image{
+
+.hero-image {
     width: 100%;
 }
-/* hero section end */
 
+/* hero section end */
+/* Curriculum section start */
+.curriculum{
+    background-image: url(../images/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.curriculum-container{
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+}
+.curriculum-container h1{
+    padding: 60px 0;
+    font-weight: bold;
+    font-size: 46px;
+}
+.curriculum-card-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    gap: 25px;
+}
+.arrow{
+    margin: 50px 0;
+}
+.btn-a{
+    border-radius: 50%;
+    padding: 15px 30px;
+    font-size: 40px;
+    color: white;
+    background-color: orange;
+    border: none;
+}
+.btn-a:hover{
+    background-color: orangered;
+}
+/* Curriculum section end */
+footer{
+    margin: 100px;
+}
 /* Responsive design start */
 @media screen and (max-width:576px) {
-    nav{
+    nav {
         width: 95%;
     }
-    .nav-center{
+
+    .nav-center {
         display: none;
     }
-    .nav-end{
+
+    .nav-end {
         display: none;
     }
-    .nav-end-small{
+
+    .nav-end-small {
         display: block;
     }
-    .hero{
+
+    .hero {
         width: 95%;
         flex-wrap: wrap-reverse;
     }
-    .hero-text{
+
+    .hero-text {
         text-align: center;
     }
-    .hero-text h1{
+
+    .hero-text h1 {
         font-size: 48px;
     }
-    .hero-image img{
+
+    .hero-image img {
         width: 90vw;
+    }
+    .curriculum-card-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .arrow{
+        display: none;
     }
 }
 
