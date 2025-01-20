@@ -1,21 +1,140 @@
-/* Reset margin padding */
-*{
-    margin: 0;
-    padding: 0;
-}
 /* Import font */
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
-.quicksand-font{
+
+.quicksand-font {
     font-family: "Quicksand", serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-  }
+}
+
+/* Reset margin padding */
+* {
+    margin: 0;
+    padding: 0;
+}
+
 /* Shared style start */
-.sky-blue{
-    color: skyblue;
+
+.flex {
+    display: flex;
 }
-.orange{
-    color: orange;
+
+a {
+    text-decoration: none;
+    color: black;
 }
+
+ul {
+    list-style-type: none;
+}
+
+.btn {
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+    padding: 8px 24px;
+    border: none;
+    border-radius: 8px;
+}
+
+.btn:hover {
+    background-color: rgba(0, 128, 0, 0.692) !important;
+    transition: 1.2s ease;
+}
+
 /* Shared style end */
+/* Body style start here */
+body {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/* Body style end here */
+/* nav style start */
+nav {
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-start {
+    align-items: center;
+}
+
+.nav-start h1 {
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.nav-center ul {
+    gap: 25px;
+}
+
+.nav-center li {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.nav-end-small {
+    width: 30px;
+    display: none;
+}
+.nav-end-small hr{
+    height: 1px;
+    color: purple;
+    margin-bottom: 8px;
+}
+
+/* nav style end */
+/* hero section start */
+.hero{
+    width: 85%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+.hero-text{
+    padding: 0 20px;
+}
+.hero-text h1{
+    font-size: 56px;
+    font-weight: 800;
+}
+.hero-image{
+    width: 100%;
+}
+/* hero section end */
+
+/* Responsive design start */
+@media screen and (max-width:576px) {
+    nav{
+        width: 95%;
+    }
+    .nav-center{
+        display: none;
+    }
+    .nav-end{
+        display: none;
+    }
+    .nav-end-small{
+        display: block;
+    }
+    .hero{
+        width: 95%;
+        flex-wrap: wrap-reverse;
+    }
+    .hero-text{
+        text-align: center;
+    }
+    .hero-text h1{
+        font-size: 48px;
+    }
+    .hero-image img{
+        width: 90vw;
+    }
+}
+
+/* Responsive design end */
