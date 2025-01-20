@@ -113,32 +113,37 @@ nav {
 
 /* hero section end */
 /* Curriculum section start */
-.curriculum{
+.curriculum {
     background-image: url(../images/bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
-.curriculum-container{
+
+.curriculum-container {
     width: 85%;
     margin: 0 auto;
     text-align: center;
 }
-.curriculum-container h1{
+
+.curriculum-container h1 {
     padding: 60px 0;
     font-weight: bold;
     font-size: 46px;
 }
-.curriculum-card-container{
+
+.curriculum-card-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-content: space-between;
     gap: 25px;
 }
-.arrow{
+
+.arrow {
     margin: 50px 0;
 }
-.btn-a{
+
+.btn-a {
     border-radius: 50%;
     padding: 15px 30px;
     font-size: 40px;
@@ -146,13 +151,90 @@ nav {
     background-color: orange;
     border: none;
 }
-.btn-a:hover{
+
+.btn-a:hover {
+    transition: 2s;
     background-color: orangered;
 }
+
 /* Curriculum section end */
-footer{
+/* Story section start */
+.sss {
+    background-image: url(../images/bg.png), linear-gradient(to top, rgba(5, 234, 47, 0.414), rgba(255, 255, 255, 0.996));
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.btn-story {
+    padding: 12px 24px;
+    border-radius: 30px;
+    border: none;
+    display: block;
+    margin-top: -30px;
+    margin-left: 30px;
+    position: absolute;
+    color: white;
+    font-size: 24px;
+}
+
+.btn-story:hover {
+    border: 1px solid;
+}
+
+.stories-container {
+    width: 85%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.big {
+    background-color: white;
+    border-radius: 25px;
+}
+
+.big img {
+    width: 100%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 15px;
+}
+
+.card img {
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.card h3 {
+    font-weight: bold;
+    padding: 30px;
+}
+
+.sss h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 46px;
+    margin-bottom: 20px;
+}
+
+/* Story section end */
+footer {
     margin: 100px;
 }
+
 /* Responsive design start */
 @media screen and (max-width:576px) {
     nav {
@@ -187,11 +269,27 @@ footer{
     .hero-image img {
         width: 90vw;
     }
-    .curriculum-card-container{
+
+    .curriculum-card-container {
         grid-template-columns: repeat(1, 1fr);
     }
-    .arrow{
+
+    .arrow {
         display: none;
+    }
+
+    .big {
+        display: none;
+    }
+
+    .btn-story {
+        padding: 6px 12px;
+        margin-top: -18px;
+        margin-left: 10px;
+        font-size: 16px;
+    }
+    .stories-container{
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
