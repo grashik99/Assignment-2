@@ -232,9 +232,19 @@ nav {
 
 /* Story section end */
 footer {
-    margin: 100px;
+    background-color: #01ACFD;
 }
-
+.m-footer{
+    width: 85%;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+.education{
+    width: 40%;
+}
+.about-school{
+    width: 30%;
+}
 /* Responsive design start */
 @media screen and (max-width:576px) {
     nav {
@@ -290,6 +300,22 @@ footer {
     }
     .stories-container{
         grid-template-columns: repeat(1, 1fr);
+    }
+    .m-footer{
+        display: block;
+    }
+    .education{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .about-school{
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+    .touch{
+        width: 90%;
+        margin: 0 auto;
     }
 }
 
