@@ -90,6 +90,39 @@ nav {
 }
 
 /* nav style end */
+/* marquee sec start */
+.marquee{
+    width: 85%;
+    margin: 5px auto;
+    height: 50px;
+    background-color: rgba(0, 128, 0, 0.744);
+    box-shadow: 2px 2px 15px green;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.marquee p{
+    text-align: center;
+    position: absolute;
+    transform: translateX(100%);
+    animation: scroll-left 15s linear infinite;
+    line-height: 50px;
+    font-weight: 700;
+    font-size: 32px;
+    color: white;
+    font-style: italic;
+    text-shadow: 5px 5px 10px rgb(60, 255, 0);
+}
+@keyframes scroll-left {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+/* marquee sec end */
 /* hero section start */
 .hero {
     width: 85%;
@@ -262,7 +295,9 @@ footer {
     .nav-end-small {
         display: block;
     }
-
+    .marquee{
+        width: 99%;
+    }
     .hero {
         width: 95%;
         flex-wrap: wrap-reverse;
